@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Geologica', sans-serif;
+    background-color: #19191b; /* لون الخلفية */
+}
+
+header {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 50px;
+    background-color: #222;
+    color: #fff;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}/* تخصيص الروابط في الهيدر */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+/* إضافة دائرة شفافة مع حدود عند التمرير على القسم المقابل */
+nav ul li a.active {
+    color: #fff;
+    background-color: transparent; /* خلفية شفافة */
+    border-radius: 50%; /* شكل دائري */
+    padding: 12px 20px;
+    color: #948eeb;
+    border: 2px solid #948eeb; /* حدود بلون محدد */
+
+}
+
+/* تأثير عند التمرير على الرابط */
+nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1); /* تكبير الرابط عند التمرير عليه */
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #948eeb;
+}
+
+.hire-me a {
+    background-color: #948eeb;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #948eeb; /* لون الحدود */
+}
+
+.hire-me a:hover {
+    background-color: #3d3d3d;
+    color: #fff;
+    border: 2px solid #948eeb; /* لون الحدود */
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content .small-text {
+    font-size: 20px;
+    color: #ffffff99;
+}
+
+.hero-content .large-text {
+    font-size: 70px;
+    color: #948eeb;
+    margin: 10px 0;
+}
+
+.hero-content .medium-text {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #ddd;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+    background-color: #948eeb;
+    padding: 13px 37px;
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+    color:#fff;
+    border: 2px solid #948eeb; /* لون الحدود */
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #948eeb;
+    border: 2px solid #948eeb; /* لون الحدود */
+}
+
+.btn.secondary:hover {
+    background-color: #333;
+    color:#fff;
+}
+
+main section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-bottom: 1px solid #444; /* لون الحدود */
+    color: #fff;
+    background-color: #19191b; /* نفس لون خلفية الموقع */
+}
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+    width: 12px; /* عرض الشريط */
+    height: 12px; /* ارتفاع الشريط للتمرير الأفقي */
+  }
+  
+  /* تخصيص شريط التمرير الخلفي */
+  ::-webkit-scrollbar-track {
+    background: #19191b; /* لون خلفية الشريط */
+    border-radius: 10px; /* زاوية حواف الشريط */
+  }
+  
+  /* تخصيص مقبض التمرير */
+  ::-webkit-scrollbar-thumb {
+    background: #343434; /* لون المقبض */
+    border-radius: 10px; /* زاوية حواف المقبض */
+  }
+  
+  /* تخصيص المقبض عند التمرير عليه */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* لون المقبض عند التمرير عليه */
+  }
+
+  .main-section9 {
+    width: 100%;
+    max-width: 350px;
+    height: 420px;
+    background: #343434;
+    border: 1px solid #948eeb; /* لون الحدود */
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin :10px;
+}
+.section-19 {
+    
+    border: 1px solid #948eeb; /* لون الحدود */
+    border-radius: 30px;
+    padding-top: 19px;
+    height: 60px;
+    font-size: 18px;
+    background: #948eeb; /* لون الخلفية */
+    color: #000000;
+}
+.section-29 ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+.section-29 li {
+    color: #9c9a9a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.section-29 li i {
+    color: #948eeb;
+    margin-right: 10px;
+}
+.section-29 button {
+    background-color: #948eeb;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 80px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #948eeb; /* لون الحدود */
+}
+.section-29 button:hover {
+    background-color: #3d3d3d;
+    color: #fff;
+    border: 2px solid #948eeb; /* لون الحدود */
+}
+  
+  .container9 {
+    display: flex;
+    padding-top: 90px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 160px;
+  }
+  
+  /* تصميم الكروت */
+  .cards9 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card9 {
+    background: #383838;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card9:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card9 i {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .card9 h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .card9 p {
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 10px;
+  }
+  
+  .card9 a {
+    color: #948eeb;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card9 a:hover {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* تصميم الفورم */
+  form {
+    width: 50%;
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  form h2 {
+    margin-bottom: 20px;
+    color: #948eeb;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    width: 700px;
+    text-align: left;
+    padding: 10px 8px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 1px solid #948eeb;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #948eeb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  form button {
+    display: block;
+    width: 150px;
+    background-color: #948eeb;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #948eeb; /* لون الحدود */
+  }
+  
+  form button:hover {
+    background-color: #3d3d3d;
+    color: #fff;
+    border: 2px solid #948eeb; /* لون الحدود */
+  }
+   /* تنسيقات القسم الرئيسي */
+   #section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* تنسيقات الأزرار */
+  .weird-btns {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .weird-btn {
+    padding: 10px 20px;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    border: 2px solid #948eeb; /* لون الحدود */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .weird-btn:hover {
+    background-color: #948eeb;
+    color: #fff;
+    border: 2px solid #948eeb; /* لون الحدود */
+  }
+
+  /* تنسيقات المحتوى */
+  .odd-content {
+    display: flex;
+    flex-wrap: wrap; /* تفعيل التواء العناصر لتناسب المساحة */
+    gap: 20px; /* المسافة بين الكروت */
+    justify-content: center; /* محاذاة الكروت في المنتصف */
+    padding: 20px;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  /* تنسيقات الكروت */
+  .card {
+    background-color: #3d3d3d;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px; /* تحديد عرض الكارت ليكون 3 كروت في الصف */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .card-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #999898;
+  }
+
+  .card-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #948eeb;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .card-btn:hover {
+    background-color: #3d3d3d;
+    color: #fff;
+    border: 2px solid #948eeb; /* لون الحدود */
+  }
+ /* تنسيقات الزر الذي تم الضغط عليه */
+    .weird-btn.active {
+      color: #000000;
+      background-color: #948eeb; /* تغيير اللون إلى الأخضر عندما يتم الضغط */
+    }
+  /* استجابة للأجهزة الصغيرة */
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px); /* عرض الكروت ليكون 2 كروت في الصف */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      width: 100%; /* عرض الكروت ليكون كارت واحد في الصف */
+    }
+  }
+  .zebra-container {
+    width: 900px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #27272a;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banana-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.pizza-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    color:#fff;
+    border: 2px solid #948eeb; /* لون الحدود */
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pizza-button.active {
+    background-color: #948eeb;
+    color: rgb(0, 0, 0);
+}
+
+.pizza-button:hover {
+  background-color: #948eeb;
+  border: 2px solid #948eeb; /* لون الحدود */
+}
+
+.giraffe-content {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #27272a;
+}
+
+.kiwi-tab {
+    display: none;
+}
+
+.kiwi-tab.active {
+    display: block;
+}
+
+/* تنسيق محتوى الزر الأول */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.image-content {
+  width: 320px;
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.image-content img{
+  border-radius: 10px;
+}
+.top-image {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.bottom-images {
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #948eeb;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #979797;
+    margin-bottom: 25px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #888;
+}
+
+/* تنسيق محتوى الزر الثاني */
+.cards-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.cardd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 2px solid #948eeb;
+    border-radius: 20px;
+    width: 800px;
+}
+
+.card-label {
+    font-size: 16px;
+    color: #948eeb;
+}
+
+.progress-bar {
+  width: 60%;
+    height: 10px;
+    background-color: #464099;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #948eeb;
+    border-radius: 5px;
+}
+
+/* تنسيق شريط التمرير */
+.cards-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+    background: #948eeb;
+    border-radius: 5px;
+}
+
+.cards-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.action-button{
+  text-decoration: none;
+  font-size: 15px;
+  color: #000000;
+  background-color: #948eeb;
+  padding: 10px 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #333;
+  color:#fff;
+  border: 2px solid #948eeb; /* لون الحدود */
+}
+/* styles.css */
+#scroll-to-top {
+  position: fixed; /* علشان يثبت في مكانه */
+  bottom: 20px; /* المسافة من الأسفل */
+  right: 20px; /* المسافة من اليمين */
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%; /* علشان يبقا دائري */
+  background-color: #948eeb;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  opacity: 0; /* مخفي في الأول */
+  visibility: hidden; /* مخفي في الأول */
+  z-index: 1000; /* علشان يظهر فوق كل العناصر */
+}
+
+#scroll-to-top.visible {
+  opacity: 1; /* يظهر */
+  visibility: visible; /* يظهر */
+}
+
+#scroll-to-top:hover {
+  background-color: #948eeb;
+}
