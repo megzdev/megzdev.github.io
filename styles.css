@@ -666,27 +666,54 @@ main section {
   background-color: #948eeb;
 }
 
+/* Media Queries للشاشات الصغيرة */
 @media (max-width: 768px) {
   header {
-      width: 90%; /* تقليل عرض الهيدر */
-      padding: 10px 20px; /* تقليل الحشوة */
+      width: 100%; /* جعل الهيدر يأخذ العرض الكامل */
+      top: 0;
+      border-radius: 0;
   }
 
-  nav ul {
-      flex-direction: column; /* تحويل القائمة إلى عمود */
-      gap: 10px;
+  .menu-icon {
+      display: block; /* إظهار أيقونة القائمة */
   }
 
-  .hire-me a {
-      font-size: 14px; /* تصغير حجم النص */
-      padding: 5px 10px; /* تقليل الحشوة */
+  .nav-links {
+      display: none; /* إخفاء القائمة في البداية */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      padding: 10px 0;
+      border-radius: 0 0 10px 10px;
   }
 
-  .logo img {
-      width: 40px; /* تصغير حجم الشعار */
+  .nav-links.active {
+      display: flex; /* إظهار القائمة عند النقر على الأيقونة */
+  }
+
+  .nav-links li {
+      text-align: center;
+  }
+
+  .nav-links li a {
+      padding: 10px 0;
+      display: block;
+  }
+
+  .hire-me {
+      display: none; /* إخفاء زر Hire Me في الشاشات الصغيرة */
   }
 }
 @media (max-width: 768px) {
+  /* تعديلات عامة */
+  body {
+      font-size: 14px; /* تصغير حجم الخط العام */
+  }
+
+  /* تعديلات الـ Hero Section */
   .hero-content .large-text {
       font-size: 40px; /* تصغير حجم النص الكبير */
   }
@@ -702,13 +729,12 @@ main section {
 
   .btn {
       width: 100%; /* جعل الأزرار تأخذ العرض الكامل */
-      text-align: center;
   }
-}
-@media (max-width: 768px) {
+
+  /* تعديلات قسم الـ About Me */
   .zebra-container {
       width: 100%; /* جعل العرض يتكيف مع الشاشة */
-      padding: 10px; /* تقليل الحشوة */
+      padding: 10px;
   }
 
   .banana-buttons {
@@ -726,8 +752,8 @@ main section {
   .text-content {
       text-align: center; /* توسيط النص */
   }
-}
-@media (max-width: 768px) {
+
+  /* تعديلات قسم الـ Portfolio */
   .weird-btns {
       flex-direction: column; /* تحويل الأزرار إلى عمود */
   }
@@ -735,11 +761,11 @@ main section {
   .card {
       width: 100%; /* جعل الكروت تأخذ العرض الكامل */
   }
-}
-@media (max-width: 768px) {
+
+  /* تعديلات قسم الـ Contact Me */
   .container9 {
       flex-direction: column; /* تحويل المحتوى إلى عمود */
-      gap: 20px; /* تقليل المسافة بين العناصر */
+      gap: 20px;
   }
 
   form {
@@ -752,20 +778,5 @@ main section {
 
   .cards9 {
       align-items: center; /* توسيط الكروت */
-  }
-}
-@media (max-width: 768px) {
-  .btn, .action-button, .card-btn {
-      padding: 10px 20px; /* زيادة حجم الأزرار */
-      font-size: 14px; /* تصغير حجم النص */
-  }
-
-  a {
-      font-size: 14px; /* تصغير حجم الروابط */
-  }
-}
-@media (max-width: 768px) {
-  body {
-      overflow-x: hidden; /* إخفاء التمرير الأفقي */
   }
 }
