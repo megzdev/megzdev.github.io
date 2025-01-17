@@ -454,18 +454,7 @@ main section {
       color: #000000;
       background-color: #948eeb; /* تغيير اللون إلى الأخضر عندما يتم الضغط */
     }
-  /* استجابة للأجهزة الصغيرة */
-  @media (max-width: 768px) {
-    .card {
-      width: calc(50% - 20px); /* عرض الكروت ليكون 2 كروت في الصف */
-    }
-  }
 
-  @media (max-width: 480px) {
-    .card {
-      width: 100%; /* عرض الكروت ليكون كارت واحد في الصف */
-    }
-  }
   .zebra-container {
     width: 900px;
     max-width: 900px;
@@ -675,4 +664,108 @@ main section {
 
 #scroll-to-top:hover {
   background-color: #948eeb;
+}
+
+@media (max-width: 768px) {
+  header {
+      width: 90%; /* تقليل عرض الهيدر */
+      padding: 10px 20px; /* تقليل الحشوة */
+  }
+
+  nav ul {
+      flex-direction: column; /* تحويل القائمة إلى عمود */
+      gap: 10px;
+  }
+
+  .hire-me a {
+      font-size: 14px; /* تصغير حجم النص */
+      padding: 5px 10px; /* تقليل الحشوة */
+  }
+
+  .logo img {
+      width: 40px; /* تصغير حجم الشعار */
+  }
+}
+@media (max-width: 768px) {
+  .hero-content .large-text {
+      font-size: 40px; /* تصغير حجم النص الكبير */
+  }
+
+  .hero-content .medium-text {
+      font-size: 20px; /* تصغير حجم النص المتوسط */
+  }
+
+  .buttons {
+      flex-direction: column; /* تحويل الأزرار إلى عمود */
+      gap: 10px;
+  }
+
+  .btn {
+      width: 100%; /* جعل الأزرار تأخذ العرض الكامل */
+      text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .zebra-container {
+      width: 100%; /* جعل العرض يتكيف مع الشاشة */
+      padding: 10px; /* تقليل الحشوة */
+  }
+
+  .banana-buttons {
+      flex-direction: column; /* تحويل الأزرار إلى عمود */
+  }
+
+  .content-wrapper {
+      flex-direction: column; /* تحويل المحتوى إلى عمود */
+  }
+
+  .image-content img {
+      width: 100%; /* جعل الصور تأخذ العرض الكامل */
+  }
+
+  .text-content {
+      text-align: center; /* توسيط النص */
+  }
+}
+@media (max-width: 768px) {
+  .weird-btns {
+      flex-direction: column; /* تحويل الأزرار إلى عمود */
+  }
+
+  .card {
+      width: 100%; /* جعل الكروت تأخذ العرض الكامل */
+  }
+}
+@media (max-width: 768px) {
+  .container9 {
+      flex-direction: column; /* تحويل المحتوى إلى عمود */
+      gap: 20px; /* تقليل المسافة بين العناصر */
+  }
+
+  form {
+      width: 100%; /* جعل النموذج يأخذ العرض الكامل */
+  }
+
+  form input, form textarea {
+      width: 100%; /* جعل الحقول تأخذ العرض الكامل */
+  }
+
+  .cards9 {
+      align-items: center; /* توسيط الكروت */
+  }
+}
+@media (max-width: 768px) {
+  .btn, .action-button, .card-btn {
+      padding: 10px 20px; /* زيادة حجم الأزرار */
+      font-size: 14px; /* تصغير حجم النص */
+  }
+
+  a {
+      font-size: 14px; /* تصغير حجم الروابط */
+  }
+}
+@media (max-width: 768px) {
+  body {
+      overflow-x: hidden; /* إخفاء التمرير الأفقي */
+  }
 }
