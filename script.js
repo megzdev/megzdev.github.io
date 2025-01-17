@@ -21,6 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
       firstSection.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.getElementById("menu-icon");
+    const navLinks = document.getElementById("nav-links");
+
+    menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active"); // فتح/إغلاق القائمة
+    });
+});
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".pizza-button");
@@ -111,14 +121,5 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     .catch(error => {
         alert("حدث خطأ في الاتصال.");
         console.error('Error:', error);
-    });
-});
-// script.js
-document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.getElementById("menu-icon");
-    const navLinks = document.getElementById("nav-links");
-
-    menuIcon.addEventListener("click", () => {
-        navLinks.classList.toggle("active"); // فتح/إغلاق القائمة
     });
 });
